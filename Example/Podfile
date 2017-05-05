@@ -1,0 +1,10 @@
+use_frameworks!
+
+target 'OAuth1_Example' do
+  pod 'OAuth1', :path => '../'
+
+  target 'OAuth1_Tests' do
+    inherit! :search_paths
+
+  end
+end
