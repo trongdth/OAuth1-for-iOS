@@ -10,4 +10,6 @@
 
 @interface MSViewController : UIViewController
 
+@property (nonatomic, strong) NSMutableArray *arrRetains;
+
 @end

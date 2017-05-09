@@ -10,11 +10,9 @@
 		04C08D3798F51BF4511D63D277B35774 /* Pods-OAuth1_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58FFCF641DE27D04F5AB9242B576A662 /* Pods-OAuth1_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F7D41962141BE08BCB865544BC0F654 /* Pods-OAuth1_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A2ED86F2704B77968AF9BAE7338DBE /* Pods-OAuth1_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31F5CCE135F59301213269551FB4D89C /* FHSTwitterEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E5FFB312D45BEC26C333629E76F8C89 /* FHSTwitterEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		41E77884C7E8E8A1C65B0F25FBAC1DBC /* FHSStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 45BB7540EBD445432FCD15AEB91FDA97 /* FHSStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4389C4FCB03EE86AB3244C7082F84ADA /* OAuth1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A68E2A9BC5A768365255D388848A91 /* OAuth1-dummy.m */; };
 		794F4B050C3E6683FCE5189CBCA9A422 /* Pods-OAuth1_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 269C11E0ED5D2C2ABCF905CC37FE8C4E /* Pods-OAuth1_Example-dummy.m */; };
 		7BEA18F09063D090670FF0D1A3039A92 /* FHSTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5079B0781FACB33E0A63DBD41E86D5DD /* FHSTwitterEngine.m */; };
-		822585A6EFBB9BCDE23E0F7CC3AD26E9 /* FHSStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 512868C3B49A1206D464EF6C941C996B /* FHSStream.m */; };
 		871B37152717DBD2808EE7C722E63FE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		BCE8EB5498F50FF7381AFC2E5DE3948B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		C1D2D7859DDEFA27C3829D231DC5C26D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -36,35 +34,33 @@
 		1BAA36D790EF54416BC05F14DDEC0155 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C71FF9BDE138DE5E0F5C8D3D53D04CA /* Pods-OAuth1_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OAuth1_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1E5FFB312D45BEC26C333629E76F8C89 /* FHSTwitterEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FHSTwitterEngine.h; sourceTree = "<group>"; };
-		24A66E3F2C131C911153BE64F8246428 /* Pods_OAuth1_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OAuth1_Tests.framework; path = "Pods-OAuth1_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A66E3F2C131C911153BE64F8246428 /* Pods_OAuth1_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuth1_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		269C11E0ED5D2C2ABCF905CC37FE8C4E /* Pods-OAuth1_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OAuth1_Example-dummy.m"; sourceTree = "<group>"; };
-		27143456D8D9E47C8BB838E6DE83C287 /* OAuth1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = OAuth1.modulemap; sourceTree = "<group>"; };
+		27143456D8D9E47C8BB838E6DE83C287 /* OAuth1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = OAuth1.modulemap; sourceTree = "<group>"; };
 		28D6751D4894398604C6430C4037E496 /* Pods-OAuth1_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OAuth1_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		30252447A96832F834779F9190E4F9BD /* OAuth1-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OAuth1-prefix.pch"; sourceTree = "<group>"; };
 		33504662114AA23C730E168B0A865635 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		350A138920C48DDBCBDB99F10522DD43 /* Pods-OAuth1_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OAuth1_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3786A85009FA2BE0B3369D87726BCD25 /* Pods-OAuth1_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OAuth1_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		3E31B1219A29C27AD7F17A3154FF6B42 /* Pods-OAuth1_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OAuth1_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		45BB7540EBD445432FCD15AEB91FDA97 /* FHSStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FHSStream.h; sourceTree = "<group>"; };
 		5079B0781FACB33E0A63DBD41E86D5DD /* FHSTwitterEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FHSTwitterEngine.m; sourceTree = "<group>"; };
-		512868C3B49A1206D464EF6C941C996B /* FHSStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FHSStream.m; sourceTree = "<group>"; };
 		51A68E2A9BC5A768365255D388848A91 /* OAuth1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OAuth1-dummy.m"; sourceTree = "<group>"; };
 		55989D78D48C6B7F722845D3218EAE5B /* Pods-OAuth1_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OAuth1_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		58FFCF641DE27D04F5AB9242B576A662 /* Pods-OAuth1_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OAuth1_Tests-umbrella.h"; sourceTree = "<group>"; };
 		5C2A1310A61C12C5A52266AA53B26525 /* Pods-OAuth1_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OAuth1_Example-resources.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6DA6B6A94E245DA9A33B914AA03F5E68 /* Pods-OAuth1_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OAuth1_Tests.modulemap"; sourceTree = "<group>"; };
-		711C5AE92405255A3F9CCCD7A1CBD37C /* Pods_OAuth1_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OAuth1_Example.framework; path = "Pods-OAuth1_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA6B6A94E245DA9A33B914AA03F5E68 /* Pods-OAuth1_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OAuth1_Tests.modulemap"; sourceTree = "<group>"; };
+		711C5AE92405255A3F9CCCD7A1CBD37C /* Pods_OAuth1_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuth1_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		780CD7B52E65013DC643A7E0DB429C16 /* Pods-OAuth1_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OAuth1_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7B7E7ACBE2BC787B497989F3BB87BF87 /* OAuth1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OAuth1.framework; path = OAuth1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7B7E7ACBE2BC787B497989F3BB87BF87 /* OAuth1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAuth1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A5A2ED86F2704B77968AF9BAE7338DBE /* Pods-OAuth1_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OAuth1_Example-umbrella.h"; sourceTree = "<group>"; };
 		C2326ABC72C6B7377A24E90A338AB22B /* Pods-OAuth1_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OAuth1_Tests-resources.sh"; sourceTree = "<group>"; };
 		C555EC00732177FF0766D37D4B1BA24B /* OAuth1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OAuth1-umbrella.h"; sourceTree = "<group>"; };
 		CC1380A20A79E7F11B7CF798099F7358 /* Pods-OAuth1_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OAuth1_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D94143DDBD47AA92215A0DB5E4559416 /* Pods-OAuth1_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OAuth1_Tests-dummy.m"; sourceTree = "<group>"; };
 		D9E8C856619015AFB0CB6C0E09E16307 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB71EF91AAF612BD9044B5C3DC75EF87 /* Pods-OAuth1_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OAuth1_Example.modulemap"; sourceTree = "<group>"; };
+		EB71EF91AAF612BD9044B5C3DC75EF87 /* Pods-OAuth1_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OAuth1_Example.modulemap"; sourceTree = "<group>"; };
 		F503A43D3AAF064357E3DFE306E6158D /* OAuth1.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OAuth1.xcconfig; sourceTree = "<group>"; };
 		FDB36EC2BE2CC62BBEDBE6A647F34D89 /* Pods-OAuth1_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OAuth1_Example-frameworks.sh"; sourceTree = "<group>"; };
 		FF871420E813068725BE8ABA703DF735 /* Pods-OAuth1_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OAuth1_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -127,12 +123,9 @@
 		15335216CEFF6D2A997CAE5057C09C4C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				45BB7540EBD445432FCD15AEB91FDA97 /* FHSStream.h */,
-				512868C3B49A1206D464EF6C941C996B /* FHSStream.m */,
 				1E5FFB312D45BEC26C333629E76F8C89 /* FHSTwitterEngine.h */,
 				5079B0781FACB33E0A63DBD41E86D5DD /* FHSTwitterEngine.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -190,7 +183,6 @@
 			children = (
 				15335216CEFF6D2A997CAE5057C09C4C /* Classes */,
 			);
-			name = OAuth1;
 			path = OAuth1;
 			sourceTree = "<group>";
 		};
@@ -240,7 +232,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41E77884C7E8E8A1C65B0F25FBAC1DBC /* FHSStream.h in Headers */,
 				31F5CCE135F59301213269551FB4D89C /* FHSTwitterEngine.h in Headers */,
 				DF7936FC89F23AFDE0133E681EE7DF7C /* OAuth1-umbrella.h in Headers */,
 			);
@@ -358,7 +349,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				822585A6EFBB9BCDE23E0F7CC3AD26E9 /* FHSStream.m in Sources */,
 				7BEA18F09063D090670FF0D1A3039A92 /* FHSTwitterEngine.m in Sources */,
 				4389C4FCB03EE86AB3244C7082F84ADA /* OAuth1-dummy.m in Sources */,
 			);

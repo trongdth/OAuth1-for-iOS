@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9999867118FBD3E4B37ECB16 /* Pods_OAuth1_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5377A6DEB545D2A89F92ACDC /* Pods_OAuth1_Tests.framework */; };
+		B1233D841EC0611400C79894 /* MSAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1233D831EC0611400C79894 /* MSAppsViewController.m */; };
+		B1233D861EC0634800C79894 /* Autonomous.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1233D851EC0634800C79894 /* Autonomous.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 /* Begin PBXFileReference section */
 		16A1E8FEC8DFE133C1AE7455 /* Pods-OAuth1_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuth1_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAuth1_Example/Pods-OAuth1_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		23FF74E060AEE9C653902422 /* Pods-OAuth1_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuth1_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuth1_Example/Pods-OAuth1_Example.release.xcconfig"; sourceTree = "<group>"; };
-		43AF4C1DFA98B9418A3B4E95 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		43AF4C1DFA98B9418A3B4E95 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5377A6DEB545D2A89F92ACDC /* Pods_OAuth1_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuth1_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* OAuth1_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OAuth1_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,12 +62,15 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		64F4603007683A3A00F6EB61 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		64F4603007683A3A00F6EB61 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		678F0635045803249A98FA42 /* Pods-OAuth1_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuth1_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAuth1_Tests/Pods-OAuth1_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		696699DAA6BD38C3B76531F7 /* Pods_OAuth1_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuth1_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AEB5D27241B9C0ACBF33258 /* OAuth1.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = OAuth1.podspec; path = ../OAuth1.podspec; sourceTree = "<group>"; };
+		6AEB5D27241B9C0ACBF33258 /* OAuth1.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OAuth1.podspec; path = ../OAuth1.podspec; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1233D821EC0611400C79894 /* MSAppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAppsViewController.h; sourceTree = "<group>"; };
+		B1233D831EC0611400C79894 /* MSAppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAppsViewController.m; sourceTree = "<group>"; };
+		B1233D851EC0634800C79894 /* Autonomous.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Autonomous.plist; sourceTree = "<group>"; };
 		FEAAA5A5013DE29FB3727381 /* Pods-OAuth1_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuth1_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuth1_Tests/Pods-OAuth1_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,8 +148,11 @@
 		6003F593195388D20070C39A /* Example for OAuth1 */ = {
 			isa = PBXGroup;
 			children = (
+				B1233D851EC0634800C79894 /* Autonomous.plist */,
 				6003F59C195388D20070C39A /* MSAppDelegate.h */,
 				6003F59D195388D20070C39A /* MSAppDelegate.m */,
+				B1233D821EC0611400C79894 /* MSAppsViewController.h */,
+				B1233D831EC0611400C79894 /* MSAppsViewController.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* MSViewController.h */,
 				6003F5A6195388D20070C39A /* MSViewController.m */,
@@ -283,6 +291,7 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				B1233D861EC0634800C79894 /* Autonomous.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1233D841EC0611400C79894 /* MSAppsViewController.m in Sources */,
 				6003F59E195388D20070C39A /* MSAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MSViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
