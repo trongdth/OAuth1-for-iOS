@@ -32,9 +32,24 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testTwitterValidWithEmailAndPasswordFields {
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app.tables.staticTexts[@"Twitter"] tap];
+    
+    XCUIElementQuery *webViewsQuery = app.webViews;
+    [webViewsQuery.staticTexts[@"Username or email"] tap];
+    
+    XCUIElement *element = [[webViewsQuery.otherElements[@"main"] childrenMatchingType:XCUIElementTypeOther] elementBoundByIndex:2];
+    XCTAssert([[[element childrenMatchingType:XCUIElementTypeOther] elementBoundByIndex:0] childrenMatchingType:XCUIElementTypeTextField].element.exists);
+    
+    [webViewsQuery.staticTexts[@"Password"] tap];
+    XCTAssert([[[element childrenMatchingType:XCUIElementTypeOther] elementBoundByIndex:1] childrenMatchingType:XCUIElementTypeSecureTextField].element.exists);
+    
+    XCUIElement *btnCancel = app.navigationBars[@"Login"].buttons[@"Cancel"];
+    XCTAssertNotNil(btnCancel);
 }
 
 @end

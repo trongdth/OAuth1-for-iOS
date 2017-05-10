@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MSAppsViewController : UIViewController {
+@interface MSAppsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     __weak IBOutlet UITableView *tblView;
 }
+
+@property (nonatomic, strong) NSMutableArray *arr;
 
 @end

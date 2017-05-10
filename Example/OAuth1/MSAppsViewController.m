@@ -24,38 +24,14 @@
 
 @implementation MSAppsViewController
 
+#pragma mark - view life cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    [[FHSTwitterEngine sharedEngine] setDelegate:self];
-    if([[FHSTwitterEngine sharedEngine] isAuthorized]) {
-        NSLog(@"YES");
-        [self callUserRequest];
-        
-    } else {
-        NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"https://api.twitter.com/oauth/access_token", kOAuth1_TOKEN,
-                                                                        @"https://api.twitter.com/oauth/request_token", kOAuth1_REQUEST_TOKEN,
-                                                                        @"https://api.twitter.com/oauth/authorize", kOAuth1_AUTHORIZE,
-                                                                        @"yRtOrW7lOURB0lTSaTWlN2fMv", kOAuth1_CONSUMER_KEY,
-                                                                        @"xOjRhL9mqzFf7Ie6Zv647K8FjPVeQyt2LcyPGAbkPYYae05VwP", kOAuth1_SECRET_KEY, nil];
-        
-        NSError *err = [[FHSTwitterEngine sharedEngine] authWithInfo:dict];
-        if (!err) {
-            UIViewController *loginController = [[FHSTwitterEngine sharedEngine]loginControllerWithCompletionHandler:^(BOOL success) {
-                if(success) {
-                    NSLog(@"YES");
-                    [self callUserRequest];
-                } else {
-                    NSLog(@"NO");
-                }
-            }];
-            [self presentViewController:loginController animated:YES completion:^{
-                
-            }];
-        }
+    _arr = [NSMutableArray array];
+    [self loadData];
 
-    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -73,15 +49,75 @@
 }
 */
 
+- (void)doAuth:(NSDictionary *)dict {
+    [[FHSTwitterEngine sharedEngine] setDelegate:self];
+    if([[FHSTwitterEngine sharedEngine] isAuthorized]) {
+        NSLog(@"YES");
+        [self callUserRequest];
+
+    } else {
+        NSError *err = [[FHSTwitterEngine sharedEngine] authWithInfo:dict];
+        if (!err) {
+            UIViewController *loginController = [[FHSTwitterEngine sharedEngine]loginControllerWithCompletionHandler:^(BOOL success) {
+                if(success) {
+                    NSLog(@"YES");
+                } else {
+                    NSLog(@"NO");
+                }
+            }];
+            [self presentViewController:loginController animated:YES completion:^{
+                
+            }];
+        }
+
+    }
+}
+
 - (void)callUserRequest {
     id data = [[FHSTwitterEngine sharedEngine] sendGETRequestForURL:[NSURL URLWithString:@"https://api.twitter.com/1.1/account/verify_credentials.json"] andParams:nil];
     NSLog(@"%@", data);
+}
+
+#pragma mark - Functions
+
+- (void)loadData {
+    _arr = [[NSMutableArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Autonomous" ofType:@"plist"]];
+    if (!_arr) {
+        [tblView reloadData];
+    }
 }
 
 #pragma mark - FHSTwitterEngineAccessTokenDelegate methods
 
 - (void)oauth1Reponsed:(NSDictionary *)dict {
     NSLog(@"%@", dict);
+}
+
+
+#pragma mark - UITableViewDelegate method
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self doAuth:[_arr objectAtIndex:indexPath.row]];
+}
+
+#pragma mark - UITableViewDatasource method
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _arr.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath; {
+    static NSString *cellIdentifier = @"cellIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    
+    NSDictionary *dict = [_arr objectAtIndex:indexPath.row];
+    cell.textLabel.text = [dict objectForKey:@"name"];
+    
+    return cell;
 }
 
 
