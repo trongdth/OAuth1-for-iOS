@@ -10,9 +10,7 @@
 #endif
 #endif
 
-#import "FHSStream.h"
 #import "FHSTwitterEngine.h"
 
 FOUNDATION_EXPORT double OAuth1VersionNumber;
 FOUNDATION_EXPORT const unsigned char OAuth1VersionString[];
-

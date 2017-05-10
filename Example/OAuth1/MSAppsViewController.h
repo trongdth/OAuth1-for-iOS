@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MSAppsViewController : UIViewController
+@interface MSAppsViewController : UIViewController {
+    __weak IBOutlet UITableView *tblView;
+}
 
 @end

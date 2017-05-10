@@ -2,6 +2,11 @@
 
 It's a library on iOS which is suitable for OAuth1.
 
+[![Build Status](https://travis-ci.org/trongdth/OAuth1-for-iOS.svg?branch=master)](https://travis-ci.org/trongdth/OAuth1-for-iOS)
+[![Version](https://img.shields.io/cocoapods/v/OAuth1.svg?style=flat)](http://cocoapods.org/pods/OAuth1)
+[![License](https://img.shields.io/cocoapods/l/OAuth1.svg?style=flat)](http://cocoapods.org/pods/OAuth1)
+[![Platform](https://img.shields.io/cocoapods/p/OAuth1.svg?style=flat)](http://cocoapods.org/pods/OAuth1)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## OVERVIEW
 
@@ -85,4 +90,4 @@ Trong Dinh, trongdth@gmail.com
 
 ## License
 
-OAuth2 is available under the MIT license. See the LICENSE file for more info.
+OAuth1 is available under the APACHE license. See the LICENSE file for more info.

@@ -3,8 +3,22 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>New item</key>
+		<key>kOAuth1_TOKEN</key>
+		<string>https://api.twitter.com/oauth/access_token</string>
+		<key>kOAuth1_REQUEST_TOKEN</key>
+		<string>https://api.twitter.com/oauth/request_token</string>
+		<key>kOAuth1_AUTHORIZE</key>
+		<string>https://api.twitter.com/oauth/authorize</string>
+		<key>kOAuth1_CONSUMER_KEY</key>
+		<string>yRtOrW7lOURB0lTSaTWlN2fMv</string>
+		<key>kOAuth1_SECRET_KEY</key>
+		<string>xOjRhL9mqzFf7Ie6Zv647K8FjPVeQyt2LcyPGAbkPYYae05VwP</string>
+		<key>kOAuth1_xAUTH_USERNAME</key>
 		<string></string>
+		<key>kOAuth1_xAUTH_PASSWORD</key>
+		<string></string>
+		<key>name</key>
+		<string>Twitter</string>
 	</dict>
 </array>
 </plist>
