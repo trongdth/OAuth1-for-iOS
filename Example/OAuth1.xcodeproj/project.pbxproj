@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9999867118FBD3E4B37ECB16 /* Pods_OAuth1_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5377A6DEB545D2A89F92ACDC /* Pods_OAuth1_Tests.framework */; };
+		B11911621EC309990057A17D /* OAuth1_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B11911611EC309990057A17D /* OAuth1_ExampleUITests.m */; };
 		B1233D841EC0611400C79894 /* MSAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1233D831EC0611400C79894 /* MSAppsViewController.m */; };
 		B1233D861EC0634800C79894 /* Autonomous.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1233D851EC0634800C79894 /* Autonomous.plist */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = OAuth1;
+		};
+		B11911641EC309990057A17D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteInfo = OAuth1_Example;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -68,6 +76,9 @@
 		6AEB5D27241B9C0ACBF33258 /* OAuth1.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OAuth1.podspec; path = ../OAuth1.podspec; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B119115F1EC309990057A17D /* OAuth1_ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OAuth1_ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B11911611EC309990057A17D /* OAuth1_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAuth1_ExampleUITests.m; sourceTree = "<group>"; };
+		B11911631EC309990057A17D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1233D821EC0611400C79894 /* MSAppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAppsViewController.h; sourceTree = "<group>"; };
 		B1233D831EC0611400C79894 /* MSAppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAppsViewController.m; sourceTree = "<group>"; };
 		B1233D851EC0634800C79894 /* Autonomous.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Autonomous.plist; sourceTree = "<group>"; };
@@ -97,6 +108,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B119115C1EC309990057A17D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -117,6 +135,7 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for OAuth1 */,
 				6003F5B5195388D20070C39A /* Tests */,
+				B11911601EC309990057A17D /* OAuth1_ExampleUITests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				029E1EF9908FF2DA6EC1C5CD /* Pods */,
@@ -128,6 +147,7 @@
 			children = (
 				6003F58A195388D20070C39A /* OAuth1_Example.app */,
 				6003F5AE195388D20070C39A /* OAuth1_Tests.xctest */,
+				B119115F1EC309990057A17D /* OAuth1_ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,6 +224,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		B11911601EC309990057A17D /* OAuth1_ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B11911611EC309990057A17D /* OAuth1_ExampleUITests.m */,
+				B11911631EC309990057A17D /* Info.plist */,
+			);
+			path = OAuth1_ExampleUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -248,6 +277,24 @@
 			productReference = 6003F5AE195388D20070C39A /* OAuth1_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B119115E1EC309990057A17D /* OAuth1_ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B11911681EC309990057A17D /* Build configuration list for PBXNativeTarget "OAuth1_ExampleUITests" */;
+			buildPhases = (
+				B119115B1EC309990057A17D /* Sources */,
+				B119115C1EC309990057A17D /* Frameworks */,
+				B119115D1EC309990057A17D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B11911651EC309990057A17D /* PBXTargetDependency */,
+			);
+			name = OAuth1_ExampleUITests;
+			productName = OAuth1_ExampleUITests;
+			productReference = B119115F1EC309990057A17D /* OAuth1_ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -259,6 +306,12 @@
 				ORGANIZATIONNAME = trongdth;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
+						TestTargetID = 6003F589195388D20070C39A;
+					};
+					B119115E1EC309990057A17D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 54DJVWMJCC;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -278,6 +331,7 @@
 			targets = (
 				6003F589195388D20070C39A /* OAuth1_Example */,
 				6003F5AD195388D20070C39A /* OAuth1_Tests */,
+				B119115E1EC309990057A17D /* OAuth1_ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,6 +354,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B119115D1EC309990057A17D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +479,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B119115B1EC309990057A17D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B11911621EC309990057A17D /* OAuth1_ExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -425,6 +494,11 @@
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* OAuth1_Example */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+		B11911651EC309990057A17D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003F589195388D20070C39A /* OAuth1_Example */;
+			targetProxy = B11911641EC309990057A17D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -603,6 +677,53 @@
 			};
 			name = Release;
 		};
+		B11911661EC309990057A17D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 54DJVWMJCC;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = OAuth1_ExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonomous.OAuth1-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OAuth1_Example;
+			};
+			name = Debug;
+		};
+		B11911671EC309990057A17D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 54DJVWMJCC;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = OAuth1_ExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonomous.OAuth1-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OAuth1_Example;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -632,6 +753,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B11911681EC309990057A17D /* Build configuration list for PBXNativeTarget "OAuth1_ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B11911661EC309990057A17D /* Debug */,
+				B11911671EC309990057A17D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
