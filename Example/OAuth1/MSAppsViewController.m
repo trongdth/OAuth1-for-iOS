@@ -9,15 +9,6 @@
 #import "MSAppsViewController.h"
 #import "FHSTwitterEngine.h"
 
-#define kOAuth1_TOKEN                   @"kOAuth1_TOKEN"
-#define kOAuth1_REQUEST_TOKEN           @"kOAuth1_REQUEST_TOKEN"
-#define kOAuth1_AUTHORIZE               @"kOAuth1_AUTHORIZE"
-#define kOAuth1_CONSUMER_KEY            @"kOAuth1_CONSUMER_KEY"
-#define kOAuth1_SECRET_KEY              @"kOAuth1_SECRET_KEY"
-#define kOAuth1_xAUTH_USERNAME          @"kOAuth1_xAUTH_USERNAME"
-#define kOAuth1_xAUTH_PASSWORD          @"kOAuth1_xAUTH_PASSWORD"
-
-
 @interface MSAppsViewController () <FHSTwitterEngineAccessTokenDelegate>
 
 @end

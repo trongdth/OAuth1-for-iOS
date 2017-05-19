@@ -31,6 +31,14 @@
 
 #import <UIKit/UIKit.h>
 
+#define kOAuth1_TOKEN                   @"kOAuth1_TOKEN"
+#define kOAuth1_REQUEST_TOKEN           @"kOAuth1_REQUEST_TOKEN"
+#define kOAuth1_AUTHORIZE               @"kOAuth1_AUTHORIZE"
+#define kOAuth1_CONSUMER_KEY            @"kOAuth1_CONSUMER_KEY"
+#define kOAuth1_SECRET_KEY              @"kOAuth1_SECRET_KEY"
+#define kOAuth1_xAUTH_USERNAME          @"kOAuth1_xAUTH_USERNAME"
+#define kOAuth1_xAUTH_PASSWORD          @"kOAuth1_xAUTH_PASSWORD"
+
 // Remove NSNulls from NSDictionary and NSArray
 // Credit for this function goes to Conrad Kramer
 id removeNull(id rootObject);
